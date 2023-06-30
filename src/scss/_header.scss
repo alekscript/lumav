@@ -1,0 +1,109 @@
+// Header
+header {
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    &__controls {
+      display: flex;
+      justify-content: space-between;
+      gap: 22px;
+      @media(max-width: $breakpoint1200) {
+        gap: 15px;
+      }
+      align-items: center;
+      font-family: $fontSecondary;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    &__link {
+      color: #424D65;
+      border-bottom: 2px solid #04A8FF;
+      transition: all .3s;
+      &:hover {
+        border-color: #fff;
+        color: #04A8FF;
+      }
+    }
+    &__link-btn {
+      color: #04A8FF;
+      background: #DEF4FE;
+      padding: 10px 36px;
+      border-bottom: none;
+      border-radius: 8px;
+      transition: background .3s;
+      @media(max-width: $breakpoint480) {
+        padding: 10px 4px;
+      }
+      &:hover {
+        background: darken($color: #DEF4FE, $amount: 10);
+      }
+    }
+  }
+  .logo {
+    display: inline-block;
+    width: 120px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+    @media(max-width: $breakpoint1200) {
+      gap: 10px;
+    }
+    &__item-link {
+      font-family: $fontSecondary;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #424D65;
+      transition: color .3s;
+      &:hover {
+        color: $accentColor;
+      }
+    }
+    &__item-partner {
+      padding: 8px 10px 8px 5px;
+      border: 1px solid #D0E5F2;
+      border-radius: 25px;
+      @media(max-width: $breakpoint768){
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+    &__new {
+      background: #FE5600;
+      color: $white;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      border-radius: 25px;
+      padding: 5px 11px;
+      transition: background .3s;
+      &:hover {
+        background: darken($color: #FE5600, $amount: 10);
+        color: #fff;
+      }
+    }
+    &__span {
+      font-family: $fontSecondary;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 13px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #424D65;
+    }
+  }
+}
+

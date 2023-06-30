@@ -1,0 +1,105 @@
+// Footer
+.section__footer {
+    display: block;
+    padding: 110px 0 110px 0;
+    @media(max-width:$breakpoint1200){
+        padding: 80px 0;
+    }
+    @media(max-width:$breakpoint768){
+        padding: 70px 0;
+    }
+}
+.footer{
+    display: flex;
+    justify-content:  space-between;
+    gap: 50px;
+    align-items: start;
+    padding: 80px 0;
+    @media(max-width:$breakpoint1200){
+        padding: 50px 0;
+    }
+    @media(max-width:$breakpoint992){
+        gap: 20px;
+    }
+    @media(max-width:$breakpoint768){
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    &__list{
+        flex: 0 1 607px;
+        @media(max-width:$breakpoint768){
+            flex: 0 1 100%;
+        }
+    }
+    &__item{
+        font-family: $fontMain;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $black;
+        margin: 10px 0;
+        padding-bottom: 15px;
+        @media(max-width:$breakpoint992){
+            font-size: 18px;
+        }
+        @media(max-width:$breakpoint768){
+            font-size: 16px;
+        }
+        &-short{
+            max-width: 500px;
+            width: 100%;
+            @media(max-width:$breakpoint768){
+                max-width: 100%;
+            }
+        }
+        a {
+            display: block;
+            font-family: $fontMain;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $accentColor;
+            @media(max-width:$breakpoint768){
+                font-size: 18px;
+            }
+        }
+    }
+    &__image{
+        flex: 0 1 388px;
+    }
+    &__img{
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    &__text{
+        font-family: Montserrat;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 43px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $black;
+        padding: 110px 0;
+        @media(max-width:$breakpoint1200){
+            padding: 50px 0;
+        }
+        @media(max-width:$breakpoint768){
+            padding: 30px 0;
+            font-size: 28px;
+        }
+        @media(max-width:$breakpoint480){
+            font-size: 24px;
+        }
+    }
+    &__span{
+        color: $accentColor;
+        font-weight: 500;
+    }
+}
